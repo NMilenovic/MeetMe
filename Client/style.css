@@ -1,0 +1,386 @@
+@font-face {
+  font-family: "DM";
+  src: url("assets/DMSerifDisplay-Regular.ttf");
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("assets/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+:root{
+  /*Collor pallet*/
+  --monza: #ca020b;
+  --monza2: #81030a;
+  --carnation: #f5654b;
+  --tacao: #f1b092;
+  --old_lace: #fdf5e8;
+  --jewel: #106e56;
+  --chealsea_cucumber: #7ba14f;
+  --kilamanjaro: #0e0201;
+
+}
+body{
+  display: flex;
+  flex-direction: column;
+  color: var(--kilamanjaro);
+  background-color: var(--old_lace);
+  font-family: "OpenSans";
+}
+input{
+  outline: none;
+  border: none;
+}
+input:focus{
+  border: 3px solid #555;
+}
+button{
+  cursor: pointer;
+}
+.kont{
+  display: flex;
+}
+
+.navDiv{
+  display: flex;
+  flex-direction: column; 
+  margin-left: 0px;
+}
+.navBtn{
+  width: 100px;
+  height: 100px;
+  margin-bottom: 2px;
+  border:none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: var(--carnation);
+}
+.navBtn:hover,.navBtn:focus{
+  background-color: var(--tacao);
+}
+
+.centeredRow{
+  display: flex;
+  justify-content: center;
+}
+.titleRow{
+  font-size: 35px;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.simpleRow{
+  display: flex;
+  flex-direction: row;
+}
+/*Matching*/
+.matchDiv{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.title{
+  font-size: 40px;
+  font-weight: bold;
+}
+.top{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-size:30px;
+}
+.topLeft{
+  display: flex;
+  flex-direction: column;
+}
+.interestsDiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.intDiv{
+  margin-left: 15px;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+.bottom .centeredRow label{
+  font-size: 25px;
+  font-weight: bold;
+}
+.rowForButtons{
+  display: flex;
+}
+.bigButton{
+  padding: 15px 150px;
+  margin-left: 10px;
+  border: none;
+}
+.rowForButtons{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.skipButton{
+  background-color: var(--monza);
+}
+.skipButton:hover{
+  background-color: var(--monza2);
+}
+.likeButton{
+  background-color: var(--chealsea_cucumber);
+}
+.likeButton:hover{
+  background-color: var(--jewel);
+}
+
+
+/*Index*/
+.BackgroundImage{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  background-image: url("assets/alejandro-escamilla-BbQLHCpVUqA-unsplash.jpg");
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  box-shadow:inset 0 50px 20px rgba(0, 0, 0, 0.8),inset 0 -50px 20px rgba(0, 0, 0, 0.8);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.TitleLab{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  font-family: "DM";
+  color: var(--old_lace);
+}
+.BtnLoginDiv{
+  position: absolute;
+  margin-top: 20px;
+  top: 50%;
+  left: 30%;
+  
+}
+.BtnRegisterDiv{
+  position: absolute;
+  margin-top: 20px;
+  top: 50%;
+  left: 55%;
+}
+.BtnIndex{
+  padding: 20px 80px  ;
+  border-radius: 2px;
+  background-color: var(--carnation);
+  color: var(--kilamanjaro);
+  border: none;
+  border-radius: 2px;
+  box-shadow: none;
+  font-size: large;
+}
+
+.BtnIndex:hover{
+  background-color: var(--tacao);
+}
+
+/*Login*/
+.centeredDiv{
+  padding: 15% 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.formInput{
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.LoginPage label{
+  color: var(--old_lace);
+}
+/*Register*/
+.RegisterPage input{
+  width: 200px;
+  height: 35px;
+  border-radius: 3px;
+}
+.RegisterPage input[type=checkbox]{
+  width: 20px;
+}
+
+.credentialDiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 25%;
+}
+
+.aboutMeDiv{
+  display: flex;
+  color: var(--old_lace);
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.aboutMeRightHalf{
+  display: flex;
+  flex-direction: column;
+}
+.aboutMeDiv input{
+  margin-bottom: 5px;
+}
+.prefDiv{
+  display: flex;
+  color: var(--old_lace);
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.prefDiv label{
+  margin-left: 2px;
+}
+.interestDiv{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.checkboxDiv > label{
+  color: var(--old_lace);
+}
+.checkboxEntry{
+  display: flex;
+  justify-content: space-between ;
+  align-items: center;
+}
+.icon{
+  padding: 20px 20px;
+}
+.selInsta{
+  background-color: #515BD4;
+  flex-grow: 1;
+}
+.instaDiv{
+  background-color:#515BD4;
+  display: flex;
+  margin: 0px 25%;
+  margin-bottom: 5px;
+}
+.regBtn{
+  display: flex;
+  justify-content: center;
+  margin: 0px 25%;
+}
+
+/*PreferencesPage*/
+.preferencesDiv{
+  flex-grow: 1;
+  margin: 0 25%;
+}
+.sTitle{
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.prefEntry{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.prefEntry select{
+  flex-grow: 1;
+  margin-left: 5px;
+}
+.preferencesDiv .row label{
+  font-size: 20px;
+}
+.preferencesDiv .centeredRow label{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*Messages*/
+.messagesPage{
+  display: flex;
+  flex-direction: row;
+}
+
+/*Profile page*/
+.ProfilePage{
+  display: flex;
+  flex-direction: row;
+}
+.ProfileDiv{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+}
+.topDiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.column{
+  display: flex;
+  flex-direction: column;
+}
+.bottomDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bottomDiv > label{
+  font-weight: bold;
+}
+.interestesDiv label{
+  margin-left: 5px;
+}
+.ChangeBtn{
+  margin: 10px 30%;
+  background-color: var(--carnation);
+  border: none;
+}
+.ChangeBtn:hover{
+  background-color: var(--tacao);
+}
+/*Messages*/
+.messagesDiv{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.divForMessage{
+  width: 500px;
+  margin-top: 10px;
+  padding: 20px 10px;
+  background-color: var(--tacao);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rmvBtn{
+  border-radius: 50%;
+  border: none;
+  height: 50px;
+  width: 50px;
+  background-color: var(--monza);
+}
+.rmvBtn:hover{
+  background-color: var(--monza2);
+}
