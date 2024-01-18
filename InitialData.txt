@@ -1,0 +1,21 @@
+CREATE 
+  (st:LookingFor {value: "Short term" }), 
+  (lt:LookingFor {value: "Long Term"}), 
+  (f:LookingFor {value: "Friend"}),
+  
+  (h:Kids {value: "Have" }), 
+  (dh:Kids {value: "Don't have"}), 
+  (dhw:Kids {value: "Don't have but want"}),
+  
+  (v:Diet {value: "Vegetarian" }), 
+  (o:Diet {value: "Omnivore"}), 
+  (ve:Diet {value: "Vegan"}),
+  
+  (ph:Pets {value: "Have" }), 
+  (pdh:Pets {value: "Don't have"}), 
+  (pdhw:Pets {value: "Don't have but want"}),
+  
+  (m:Interest {value: "Music"}), 
+  (mo:Interest {value: "Movies"}), 
+  (b:Interest {value: "Books"}), 
+  (fit:Interest {value:"Fitness"});
