@@ -8,7 +8,7 @@ Za pokretanje aplikacije neophodno je:
 
 Pokretanje:
 - Pokrenuti Neo4j instancu, aplikacija komunicira sa njom na portu 7687.  
-- SAMO PRILIKOM PRVOG POKRETANJA: U Neo4j konzoli na lokaciji http://localhost:7474 izvršiti query iz fajla InitalData.txt
+- SAMO PRILIKOM PRVOG POKRETANJA: U Neo4j konzoli na lokaciji portu 7474 izvršiti query iz fajla InitalData.txt
 - Na lokaciji "./API/" izvršiti komandu "dotnet watch run" za startovanje API-a.
 - Pokrenuti live server.
 
